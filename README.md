@@ -42,9 +42,9 @@ cd foodgram-st
 DEBUG=True
 SECRET_KEY=django-insecure-123
 ALLOWED_HOSTS=127.0.0.1,localhost,backend
-POSTGRES_DB=django_db
-POSTGRES_USER=django_user
-POSTGRES_PASSWORD=django_password
+POSTGRES_DB=foodgram
+POSTGRES_USER=foodgram
+POSTGRES_PASSWORD=foodgram
 DB_HOST=db
 DB_PORT=5432
 ```
