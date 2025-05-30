@@ -13,7 +13,7 @@ logger.info(f"DEBUG: {os.getenv('DEBUG', 'False')}")
 logger.info(f"ALLOWED_HOSTS: {os.getenv('ALLOWED_HOSTS', '127.0.0.1,localhost')}")
 logger.info(f"DB_HOST: {os.getenv('DB_HOST', 'localhost')}")
 logger.info(f"DB_PORT: {os.getenv('DB_PORT', '5432')}")
-logger.info(f"POSTGRES_DB: {os.getenv('POSTGRES_DB', 'foodgram')}")
+#logger.info(f"POSTGRES_DB: {os.getenv('POSTGRES_DB', '')}")
 
 # Logging environment variables
 env_vars = {
@@ -98,8 +98,8 @@ WSGI_APPLICATION = 'foodgram_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB', 'django_db'),
-        'USER': os.getenv('POSTGRES_USER', 'django_user'),
+        'NAME': os.getenv('POSTGRES_DB', 'django'),
+        'USER': os.getenv('POSTGRES_USER', 'django'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
         'HOST': os.getenv('DB_HOST', ''),
         'PORT': os.getenv('DB_PORT', 5432)
